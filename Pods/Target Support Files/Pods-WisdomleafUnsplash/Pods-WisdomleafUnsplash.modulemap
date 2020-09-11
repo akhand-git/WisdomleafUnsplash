@@ -1,0 +1,6 @@
+framework module Pods_WisdomleafUnsplash {
+  umbrella header "Pods-WisdomleafUnsplash-umbrella.h"
+
+  export *
+  module * { export * }
+}

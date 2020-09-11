@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import SwiftyJSON
+
+struct APIConstants {
+  static var baseURL: String {
+
+    return "https://picsum.photos/v2"
+    
+  }
+}

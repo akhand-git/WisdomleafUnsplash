@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B35DCA3250B34C000190AA4 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35DCA2250B34C000190AA4 /* UIColor+Extension.swift */; };
+		8B35DCA5250B35B000190AA4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35DCA4250B35B000190AA4 /* UIView+Extension.swift */; };
+		8B35DCA8250B400E00190AA4 /* UnsplashListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35DCA6250B400E00190AA4 /* UnsplashListCell.swift */; };
+		8B35DCA9250B400E00190AA4 /* UnsplashListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B35DCA7250B400E00190AA4 /* UnsplashListCell.xib */; };
+		8B35DCAB250B414E00190AA4 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35DCAA250B414E00190AA4 /* Protocols.swift */; };
+		8B99ECD9250B5F320024DC59 /* UnsplashDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99ECD8250B5F320024DC59 /* UnsplashDetailVC.swift */; };
+		8B99ECDC250B5FAC0024DC59 /* UnsplashDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99ECDA250B5FAC0024DC59 /* UnsplashDetailCell.swift */; };
+		8B99ECDD250B5FAC0024DC59 /* UnsplashDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B99ECDB250B5FAC0024DC59 /* UnsplashDetailCell.xib */; };
+		8B99ECE0250B60050024DC59 /* UnsplashDetailTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99ECDE250B60050024DC59 /* UnsplashDetailTitleCell.swift */; };
+		8B99ECE1250B60050024DC59 /* UnsplashDetailTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B99ECDF250B60050024DC59 /* UnsplashDetailTitleCell.xib */; };
+		8B99ECE3250B66E00024DC59 /* UnsplashApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99ECE2250B66E00024DC59 /* UnsplashApi.swift */; };
+		8B99ECE5250B6A080024DC59 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99ECE4250B6A080024DC59 /* HTTPRequestManager.swift */; };
+		8B99ECE7250B6ADE0024DC59 /* HTTPRequestPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99ECE6250B6ADE0024DC59 /* HTTPRequestPreset.swift */; };
+		8B99ECE9250B6CF90024DC59 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99ECE8250B6CF90024DC59 /* APIConstants.swift */; };
+		8B99ECEB250B6DC50024DC59 /* UnsplashApiPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B99ECEA250B6DC50024DC59 /* UnsplashApiPreset.swift */; };
+		8BE93B79250B290D0074073E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE93B78250B290D0074073E /* AppDelegate.swift */; };
+		8BE93B7B250B290D0074073E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE93B7A250B290D0074073E /* SceneDelegate.swift */; };
+		8BE93B7D250B290D0074073E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE93B7C250B290D0074073E /* ViewController.swift */; };
+		8BE93B80250B290D0074073E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE93B7E250B290D0074073E /* Main.storyboard */; };
+		8BE93B82250B290F0074073E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE93B81250B290F0074073E /* Assets.xcassets */; };
+		8BE93B85250B290F0074073E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE93B83250B290F0074073E /* LaunchScreen.storyboard */; };
+		8BE93B90250B2DFA0074073E /* unsplash.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BE93B8F250B2DFA0074073E /* unsplash.json */; };
+		8BE93B92250B30390074073E /* Unsplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE93B91250B30390074073E /* Unsplash.swift */; };
+		E2B6E75485850678943BFEFD /* Pods_WisdomleafUnsplash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659C21750127218F872C1789 /* Pods_WisdomleafUnsplash.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61FAC8DDA86C32FA6D119542 /* Pods-WisdomleafUnsplash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomleafUnsplash.debug.xcconfig"; path = "Target Support Files/Pods-WisdomleafUnsplash/Pods-WisdomleafUnsplash.debug.xcconfig"; sourceTree = "<group>"; };
+		659C21750127218F872C1789 /* Pods_WisdomleafUnsplash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WisdomleafUnsplash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B35DCA2250B34C000190AA4 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		8B35DCA4250B35B000190AA4 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		8B35DCA6250B400E00190AA4 /* UnsplashListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashListCell.swift; sourceTree = "<group>"; };
+		8B35DCA7250B400E00190AA4 /* UnsplashListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnsplashListCell.xib; sourceTree = "<group>"; };
+		8B35DCAA250B414E00190AA4 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		8B99ECD8250B5F320024DC59 /* UnsplashDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashDetailVC.swift; sourceTree = "<group>"; };
+		8B99ECDA250B5FAC0024DC59 /* UnsplashDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashDetailCell.swift; sourceTree = "<group>"; };
+		8B99ECDB250B5FAC0024DC59 /* UnsplashDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnsplashDetailCell.xib; sourceTree = "<group>"; };
+		8B99ECDE250B60050024DC59 /* UnsplashDetailTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashDetailTitleCell.swift; sourceTree = "<group>"; };
+		8B99ECDF250B60050024DC59 /* UnsplashDetailTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnsplashDetailTitleCell.xib; sourceTree = "<group>"; };
+		8B99ECE2250B66E00024DC59 /* UnsplashApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashApi.swift; sourceTree = "<group>"; };
+		8B99ECE4250B6A080024DC59 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
+		8B99ECE6250B6ADE0024DC59 /* HTTPRequestPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestPreset.swift; sourceTree = "<group>"; };
+		8B99ECE8250B6CF90024DC59 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		8B99ECEA250B6DC50024DC59 /* UnsplashApiPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashApiPreset.swift; sourceTree = "<group>"; };
+		8BE93B75250B290D0074073E /* WisdomleafUnsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomleafUnsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE93B78250B290D0074073E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BE93B7A250B290D0074073E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8BE93B7C250B290D0074073E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BE93B7F250B290D0074073E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BE93B81250B290F0074073E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BE93B84250B290F0074073E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BE93B86250B290F0074073E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE93B8F250B2DFA0074073E /* unsplash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = unsplash.json; sourceTree = "<group>"; };
+		8BE93B91250B30390074073E /* Unsplash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unsplash.swift; sourceTree = "<group>"; };
+		A718453FDA4D5AC9A18F61C1 /* Pods-WisdomleafUnsplash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomleafUnsplash.release.xcconfig"; path = "Target Support Files/Pods-WisdomleafUnsplash/Pods-WisdomleafUnsplash.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BE93B72250B290D0074073E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B6E75485850678943BFEFD /* Pods_WisdomleafUnsplash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C8F18E7A8E5913A4CE06E50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61FAC8DDA86C32FA6D119542 /* Pods-WisdomleafUnsplash.debug.xcconfig */,
+				A718453FDA4D5AC9A18F61C1 /* Pods-WisdomleafUnsplash.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		56420438D0DCFFC796EC8064 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				659C21750127218F872C1789 /* Pods_WisdomleafUnsplash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B35DCA1250B34B100190AA4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8B35DCA2250B34C000190AA4 /* UIColor+Extension.swift */,
+				8B35DCA4250B35B000190AA4 /* UIView+Extension.swift */,
+				8BE93B8F250B2DFA0074073E /* unsplash.json */,
+				8B35DCAA250B414E00190AA4 /* Protocols.swift */,
+				8B99ECE2250B66E00024DC59 /* UnsplashApi.swift */,
+				8B99ECE4250B6A080024DC59 /* HTTPRequestManager.swift */,
+				8B99ECE6250B6ADE0024DC59 /* HTTPRequestPreset.swift */,
+				8B99ECE8250B6CF90024DC59 /* APIConstants.swift */,
+				8B99ECEA250B6DC50024DC59 /* UnsplashApiPreset.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8BE93B6C250B290D0074073E = {
+			isa = PBXGroup;
+			children = (
+				8BE93B77250B290D0074073E /* WisdomleafUnsplash */,
+				8BE93B76250B290D0074073E /* Products */,
+				0C8F18E7A8E5913A4CE06E50 /* Pods */,
+				56420438D0DCFFC796EC8064 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8BE93B76250B290D0074073E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BE93B75250B290D0074073E /* WisdomleafUnsplash.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BE93B77250B290D0074073E /* WisdomleafUnsplash */ = {
+			isa = PBXGroup;
+			children = (
+				8B35DCA1250B34B100190AA4 /* Helper */,
+				8BE93B8E250B29AB0074073E /* Views */,
+				8BE93B8D250B29970074073E /* Models */,
+				8BE93B8C250B297B0074073E /* VC */,
+				8BE93B78250B290D0074073E /* AppDelegate.swift */,
+				8BE93B7A250B290D0074073E /* SceneDelegate.swift */,
+				8BE93B7E250B290D0074073E /* Main.storyboard */,
+				8BE93B81250B290F0074073E /* Assets.xcassets */,
+				8BE93B83250B290F0074073E /* LaunchScreen.storyboard */,
+				8BE93B86250B290F0074073E /* Info.plist */,
+			);
+			path = WisdomleafUnsplash;
+			sourceTree = "<group>";
+		};
+		8BE93B8C250B297B0074073E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				8BE93B7C250B290D0074073E /* ViewController.swift */,
+				8B99ECD8250B5F320024DC59 /* UnsplashDetailVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		8BE93B8D250B29970074073E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BE93B91250B30390074073E /* Unsplash.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BE93B8E250B29AB0074073E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B35DCA6250B400E00190AA4 /* UnsplashListCell.swift */,
+				8B35DCA7250B400E00190AA4 /* UnsplashListCell.xib */,
+				8B99ECDA250B5FAC0024DC59 /* UnsplashDetailCell.swift */,
+				8B99ECDB250B5FAC0024DC59 /* UnsplashDetailCell.xib */,
+				8B99ECDE250B60050024DC59 /* UnsplashDetailTitleCell.swift */,
+				8B99ECDF250B60050024DC59 /* UnsplashDetailTitleCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BE93B74250B290D0074073E /* WisdomleafUnsplash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE93B89250B290F0074073E /* Build configuration list for PBXNativeTarget "WisdomleafUnsplash" */;
+			buildPhases = (
+				F4FA25A9E3C128376B83729F /* [CP] Check Pods Manifest.lock */,
+				8BE93B71250B290D0074073E /* Sources */,
+				8BE93B72250B290D0074073E /* Frameworks */,
+				8BE93B73250B290D0074073E /* Resources */,
+				2CEB7F0A54015B94CF5ADEE5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WisdomleafUnsplash;
+			productName = WisdomleafUnsplash;
+			productReference = 8BE93B75250B290D0074073E /* WisdomleafUnsplash.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BE93B6D250B290D0074073E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Akhand;
+				TargetAttributes = {
+					8BE93B74250B290D0074073E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8BE93B70250B290D0074073E /* Build configuration list for PBXProject "WisdomleafUnsplash" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BE93B6C250B290D0074073E;
+			productRefGroup = 8BE93B76250B290D0074073E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BE93B74250B290D0074073E /* WisdomleafUnsplash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BE93B73250B290D0074073E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE93B85250B290F0074073E /* LaunchScreen.storyboard in Resources */,
+				8BE93B90250B2DFA0074073E /* unsplash.json in Resources */,
+				8B35DCA9250B400E00190AA4 /* UnsplashListCell.xib in Resources */,
+				8B99ECE1250B60050024DC59 /* UnsplashDetailTitleCell.xib in Resources */,
+				8BE93B82250B290F0074073E /* Assets.xcassets in Resources */,
+				8B99ECDD250B5FAC0024DC59 /* UnsplashDetailCell.xib in Resources */,
+				8BE93B80250B290D0074073E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CEB7F0A54015B94CF5ADEE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WisdomleafUnsplash/Pods-WisdomleafUnsplash-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WisdomleafUnsplash/Pods-WisdomleafUnsplash-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WisdomleafUnsplash/Pods-WisdomleafUnsplash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4FA25A9E3C128376B83729F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WisdomleafUnsplash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BE93B71250B290D0074073E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B99ECE3250B66E00024DC59 /* UnsplashApi.swift in Sources */,
+				8B35DCA5250B35B000190AA4 /* UIView+Extension.swift in Sources */,
+				8BE93B7D250B290D0074073E /* ViewController.swift in Sources */,
+				8BE93B79250B290D0074073E /* AppDelegate.swift in Sources */,
+				8B99ECE7250B6ADE0024DC59 /* HTTPRequestPreset.swift in Sources */,
+				8B99ECE5250B6A080024DC59 /* HTTPRequestManager.swift in Sources */,
+				8BE93B7B250B290D0074073E /* SceneDelegate.swift in Sources */,
+				8B99ECE0250B60050024DC59 /* UnsplashDetailTitleCell.swift in Sources */,
+				8BE93B92250B30390074073E /* Unsplash.swift in Sources */,
+				8B35DCA3250B34C000190AA4 /* UIColor+Extension.swift in Sources */,
+				8B35DCA8250B400E00190AA4 /* UnsplashListCell.swift in Sources */,
+				8B99ECE9250B6CF90024DC59 /* APIConstants.swift in Sources */,
+				8B99ECD9250B5F320024DC59 /* UnsplashDetailVC.swift in Sources */,
+				8B99ECEB250B6DC50024DC59 /* UnsplashApiPreset.swift in Sources */,
+				8B99ECDC250B5FAC0024DC59 /* UnsplashDetailCell.swift in Sources */,
+				8B35DCAB250B414E00190AA4 /* Protocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8BE93B7E250B290D0074073E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BE93B7F250B290D0074073E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BE93B83250B290F0074073E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BE93B84250B290F0074073E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BE93B87250B290F0074073E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BE93B88250B290F0074073E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BE93B8A250B290F0074073E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61FAC8DDA86C32FA6D119542 /* Pods-WisdomleafUnsplash.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WisdomleafUnsplash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peppersquare.WisdomleafUnsplash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BE93B8B250B290F0074073E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A718453FDA4D5AC9A18F61C1 /* Pods-WisdomleafUnsplash.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WisdomleafUnsplash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peppersquare.WisdomleafUnsplash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BE93B70250B290D0074073E /* Build configuration list for PBXProject "WisdomleafUnsplash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE93B87250B290F0074073E /* Debug */,
+				8BE93B88250B290F0074073E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE93B89250B290F0074073E /* Build configuration list for PBXNativeTarget "WisdomleafUnsplash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE93B8A250B290F0074073E /* Debug */,
+				8BE93B8B250B290F0074073E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BE93B6D250B290D0074073E /* Project object */;
+}
