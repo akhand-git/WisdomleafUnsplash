@@ -49,7 +49,7 @@ class UnsplashListCell: UITableViewCell {
                       }
                   }
               }
-        descrip.text = ""
+        descrip.text = unsplash.url
     }
     
     fileprivate func setupPlayerView() {
