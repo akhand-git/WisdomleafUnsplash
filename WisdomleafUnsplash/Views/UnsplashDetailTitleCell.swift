@@ -9,10 +9,10 @@
 import UIKit
 import SDWebImage
 class UnsplashDetailTitleCell: UITableViewCell {
-
+    
     @IBOutlet weak var descrip: UILabel!
     @IBOutlet weak var author: UILabel!
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -38,7 +38,7 @@ class UnsplashDetailTitleCell: UITableViewCell {
         descrip.text = unsplash.url
     }
     
-
+    
     
 }
 
