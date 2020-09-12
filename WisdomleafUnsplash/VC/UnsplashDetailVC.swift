@@ -12,7 +12,7 @@ class UnsplashDetailVC: UIViewController {
     var gradientLayer = CAGradientLayer()
     @IBOutlet weak var tableView: UITableView!
     var unsplash: Unsplash?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         gradientLayer.frame = view.bounds

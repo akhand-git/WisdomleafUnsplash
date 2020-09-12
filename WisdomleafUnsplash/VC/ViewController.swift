@@ -60,15 +60,6 @@ class UnsplashListVC: UIViewController {
         fetchUnsplash()
     }
     
-    func fetchNextPageRecord(rowNo:Int)
-    {
-        if rowNo == allUnsplash.count-1
-        {
-            self.page += 1
-            fetchUnsplash()
-        }
-    }
-    
     //MARK:- Fetch all Unsplash API
     
     @objc func fetchUnsplash(completion:  (()->())? = nil) {
@@ -83,6 +74,7 @@ class UnsplashListVC: UIViewController {
             DispatchQueue.main.async() {
                 self.tableView.reloadData()
                 self.refreshControl.endRefreshing()
+                self.tableView.tableFooterView = nil
                 completion?()
             }
         }, failure: { (error, code) in
@@ -93,15 +85,13 @@ class UnsplashListVC: UIViewController {
         })
     }
     
-    
 }
- //MARK:- TableView  Delegate & DataSource
+//MARK:- TableView  Delegate & DataSource
 
-extension UnsplashListVC:UITableViewDelegate,UITableViewDataSource{
+extension UnsplashListVC:UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UnsplashListCell.ReuseIdentifier, for: indexPath) as! UnsplashListCell
         cell.setup(unsplash: allUnsplash[indexPath.row])
-        fetchNextPageRecord(rowNo: indexPath.row)
         return cell
     }
     
@@ -117,5 +107,28 @@ extension UnsplashListVC:UITableViewDelegate,UITableViewDataSource{
         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "UnsplashDetailVC") as? UnsplashDetailVC
         vc?.unsplash = allUnsplash[indexPath.row]
         self.present(vc!, animated: true, completion: nil)
+    }
+    
+    func createSpinnerFooter() -> UIView{
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100))
+        let spinner = UIActivityIndicatorView()
+        spinner.color = .white
+        spinner.center = footerView.center
+        footerView.addSubview(spinner)
+        spinner.startAnimating()
+        return footerView
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let position = scrollView.contentOffset.y
+        if position > (tableView.contentSize.height-100-scrollView.frame.size.height){
+            guard !unsplashApi.isPaginating else {
+                // we are already fetching more data
+                return
+            }
+            self.tableView.tableFooterView = createSpinnerFooter()
+            self.page += 1
+            fetchUnsplash()
+        }
     }
 }

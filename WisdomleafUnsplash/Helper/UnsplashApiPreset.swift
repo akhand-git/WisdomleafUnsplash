@@ -13,7 +13,7 @@ class UnsplashApiPreset: HTTPRequestPreset {
   @objc static var kBoardAuthToken: [String: String] {
         return ["Authorization": "Bearer:"]
     }
-    static var getReportApi: HTTPRequestPreset {
+    static var getUnsplashApi: HTTPRequestPreset {
         var headers: [String:String] = [String: String]()
         headers +& [kContentTypeJson, kBoardAuthToken]
         return HTTPRequestPreset(headers: headers, params: nil, encoding: HTTPRequestManager.getURLEncoding, baseUrl: APIConstants.baseURL)

@@ -14,10 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Thread.sleep(forTimeInterval: 1)
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor :UIColor(red: 75.0/255.0, green: 75.0/255.0, blue: 75.0/255.0, alpha: 1.0),
-                                                            .font : UIFont.systemFont(ofSize: 17, weight: .semibold)]
-
+        Thread.sleep(forTimeInterval: 5)
         // Override point for customization after application launch.
         return true
     }
